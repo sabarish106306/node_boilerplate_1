@@ -1,0 +1,5 @@
+moment_details
+CREATE TABLE IF NOT EXISTS moment_details ( id SERIAL PRIMARY KEY, ref_id VARCHAR(50) NOT NULL, description VARCHAR(2056), profile_id VARCHAR(50) NOT NULL, date date, tags VARCHAR(250));
+
+media_details
+CREATE TABLE IF NOT EXISTS media_details ( id SERIAL PRIMARY KEY, ref_id VARCHAR(50) NOT NULL, media_type VARCHAR(50), source_ref VARCHAR(250) NOT NULL, resolution_type VARCHAR(50),place VARCHAR(250), created DATE);
